@@ -25,9 +25,6 @@ var mySwiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
       clickable: true,
     },
-    observer: true,
-    observeParents: true,
-            
     breakpoints: {
         900: {
             slidesPerView: 3,
