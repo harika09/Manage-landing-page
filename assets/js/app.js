@@ -25,6 +25,14 @@ var mySwiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
       clickable: true,
     },
+
+    //AutoPlay
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+    
+    //Min-width
     breakpoints: {
         900: {
             slidesPerView: 3,
@@ -34,3 +42,53 @@ var mySwiper = new Swiper('.swiper-container', {
 });
 
 mySwiper.init();
+
+
+
+// ===== Validate Email Subscription ==== //
+
+function validate(){
+    const emailValidate = document.getElementById("email").value;
+    var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if(emailValidate == ''){
+        errorMessage();
+    }
+    else if(emailValidate.match(pattern)){
+        successMessage();
+    }
+    else{
+        invalidEmail();
+    }
+
+}
+
+function errorMessage(){
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Email cannnot be empty',
+      })
+}
+
+function invalidEmail(){
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Email is Invalid!',
+      })
+}
+
+function successMessage(){
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Subscription Confirm!',
+        text: 'Thank you for getting in touch!',
+        showConfirmButton: true,
+      })
+      document.getElementById("email").value = " ";
+}
+
+
+
