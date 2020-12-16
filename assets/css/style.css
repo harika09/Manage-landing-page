@@ -26,6 +26,11 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    background-image: url(/assets/img/bg-tablet-pattern.svg), url(/assets/img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 150% -10%, -120% 70%;
+}
 
 li{
     margin-left: 30px;
@@ -100,11 +105,7 @@ header.sticky li :hover{
     color: green;
 }
 
-/* .banner-container{
-    background: url(/assets/img/bg-tablet-pattern.svg) no-repeat;
-    background-position: right -150px;
-    background-size: 50%;
-} */
+
 
 .btn-started{
     background-color: var(--Bright-Red);
@@ -159,8 +160,7 @@ header.sticky li :hover{
     display: grid;
     grid-gap: 50px;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .manage-content .manage-left-text h1{
@@ -203,36 +203,6 @@ header.sticky li :hover{
     margin-bottom: 40px;
     color: var(--Dark-Grayish-Blue);
 }
-
-/* .manage-content .manage-right-text {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.manage-right-text .row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.manage-right-text h2{
-    margin-bottom: 20px;
-}
-
-.manage-right-text .title span{
-    display: inline-block;
-    background-color: var(--Bright-Red);
-    padding: 5px 15px;
-    border-radius: 25px;
-    color: #fff;
-    margin-top: 5px;
-}
-
-.manage-right-text .text{
-    width: 440px;
-} */
-
 /* ========== Management END ========== */
 
 /* ========== Testimonials ========== */
@@ -242,6 +212,7 @@ header.sticky li :hover{
   
 }
 
+/* Swiper Js */
 .swiper-container {
     width: 100%;
     height: auto;
@@ -250,6 +221,7 @@ header.sticky li :hover{
 .swiper-pagination{  
     display: none;
 }
+/* Swiper Js */
   
 
 .testimonials-content h1{
@@ -327,6 +299,8 @@ header.sticky li :hover{
 }
 
 .simplify-content{
+    background: url(/assets/img/bg-simplify-section-desktop.svg) no-repeat center;
+    background-size: cover;
     display: flex;
     justify-content: space-around;
     padding: 40px 0;   
@@ -407,6 +381,17 @@ header.sticky li :hover{
 .sub .email{
     border-radius: 50px;
     padding: 10px 20px;
+    outline: none;
+    border: none;
+    width: 80%;
+    margin-right: 10px;
+}
+
+.sub .btn-started{
+   
+    border:none;
+    outline: none;
+    font-size: 1rem;
 }
 
 .copy-right .copy{
@@ -428,6 +413,11 @@ header.sticky li :hover{
 
 /* ========== Media Query ========== */
 @media screen and (max-width: 900px){
+    body{
+        background-image: url(/assets/img/bg-tablet-pattern.svg), none;
+        background-repeat: no-repeat;
+        background-position: 150% -10%;
+    }
     /* ========== Header Navigation ========== */
     header{
         padding: 20px 10px;
@@ -439,7 +429,7 @@ header.sticky li :hover{
 
     header .nav-menu.active{
         width: 80%;
-        height: 400px;
+        height: 350px;
         position: fixed;
         top: 80px;
         left: 10%;
@@ -485,23 +475,35 @@ header.sticky li :hover{
 
     .banner-content .banner-img{
         grid-row: 1;
-        margin-top: 40px;
+        margin-top: 60px;
         justify-self: center;
     }
 
     .banner-content .banner-img img{
-        width: 650px;
+        width: 550px;
     }
 
-    .banner-content h1, .banner-content p{
+    .banner-content h1{
         width: 100%;
         text-align: center;
         margin-top: 20px;
+        font-size: 2rem;
+        line-height: 35px;
+    }
+    .banner-content p{
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 0 25px;
+        width: 100%;
     }
 
-    .btn-started { /* Center  Span */
+
+
+    .banner-content .btn-started { /* Center  Span */
        display: table;
-       margin: 0 auto;
+       margin: 0 auto 50px auto;
+       
     }
     /* ========== Banner END ========== */
 
@@ -511,50 +513,41 @@ header.sticky li :hover{
         grid-template-columns: 1fr;
     }
 
-    .manage-content .manage-left-text h1, .manage-content .manage-left-text p {
+    .manage-content .manage-left-text h1 {
         max-width: 100%;
         text-align: center;
+        font-size: 2rem;
+    }
+
+    .manage-content .manage-left-text p{
+        text-align: center;
+        padding: 0 10px;
+        margin: 0 auto;
+        max-width: 100%;
     }
 
 
-    .manage-content .manage-right-text{
-        width: 100%;
-        padding-left: 50px;
-  
+    .manage-content .manage-right-text {
+        width:  100%;
+        padding: 0px;
     }
     
-    .manage-content .manage-right-text span{
-        left: 20px;
-        width: 80px;    
+    .manage-content .manage-right-text .title .number{
+        left: -15px;
+        width: 80px; 
+        height: 45px;
+        display: inline-block;
+        margin-top: -4px;
+        padding-top: 10px;
     }
+
      .right-text .title{
         text-align: center;
         background-color: #FDEFEB;
         color:var(--Dark-Blue);
+        font-size: 1.5rem;
+        padding: 4px;
     }
-
-    /* .manage-right-text {
-        position: relative;
-    }
-
-    .manage-right-text .row{
-        justify-content: center;
-        width: 100%;
-    }
-
-    .manage-right-text .row .title .number{
-        position: absolute;
-        left: 140px;
-        z-index: 1;
-        margin: 0
-    }
-
-    .manage-right-text .row .text{
-        width: 100%;
-    }
-    .manage-right-text .row .text h2{
-        background-color: #FDF1EC;
-    } */
     /* ========== Management END ========== */
 
     /* ========== Testimonials ========== */
@@ -562,16 +555,13 @@ header.sticky li :hover{
      grid-template-columns:1fr;
     }
      /* ========== Testimonials END ========== */
-     .simplify-content{
+    
+    /* ========== Simplify ========== */
+    .simplify-content{
         flex-direction: column;
         align-items: center; 
         text-align: center;
     }
-
-    /* ========== Testimonials END ========== */
-
-
-    /* ========== Simplify ========== */
     .simplify-container{
         background-color: var(--Bright-Red);
         color: #fff;
@@ -591,6 +581,8 @@ header.sticky li :hover{
     .simplify-content .simplify-btn span{
         display: block;
         margin-top: 10px;
+        background-color: #fff;
+        color: var(--Bright-Red);
     
     }
     /* ========== Simplify END ========== */
@@ -635,15 +627,13 @@ header.sticky li :hover{
         margin-bottom: 10px;
     }
 
-    .sub input{
+    .sub .email{
         width: 100%;
         margin-bottom: 10px;
+        margin-right: 5px;
     }
 
-    .sub .btn-started{
-        display: inline-block;
-        text-align: left;
-    }
+ 
 
     .copy-right{
         position: absolute;
@@ -652,6 +642,10 @@ header.sticky li :hover{
         width: 100%;
     }
 
+
+    .menu-list .menu li{
+        margin-left: 0;
+    }
     /* ========== Footer END ========== */
 
 
@@ -660,14 +654,73 @@ header.sticky li :hover{
 
 
 @media screen and (max-width: 600px){
-    
-
-    .manage-content{
-        display: block;
-    }
- 
 
    
+     /* ========== Management ========== */
+    .manage-content .manage-right-text .title .number{
+        left: -15px;
+        width: 50px;
+        height: 30px;
+        padding-top: 3px;
+        padding-right: 35px;
+        font-size: 1rem;
+    }
+
+    .right-text .title{
+        text-align: center;
+        background-color: #FDEFEB;
+        color:var(--Dark-Blue);
+        font-size: 1rem;
+        padding: 4px;
+        width: 100%;
+    }
+    /* ========== Management END ========== */
+
+    /* ========== Testimonials ========== */
+    .testimonials-content h1{
+        font-size: 1.5rem;
+    }
+    /* ========== Testimonials END ========== */
+
+    /* ========== Simplify ========== */
+
+  
+    .simplify-content h1{
+        font-size: 1.8rem;
+    }
+     /* ========== Simplify END ========== */
+   
+
+
+ 
+}
+
+@media screen and (max-width: 320px){
+    /* ========== Management ========== */
+    .manage-content .manage-right-text .title .number{
+        left: -25px;
+        height: 26px;
+        padding-top: 3px;
+        font-size: .8rem;
+    }
+
+    .right-text .title{
+        text-align: center;
+        background-color: #FDEFEB;
+        color:var(--Dark-Blue);
+        font-size: .7rem;
+        padding: 4px;
+        width: 100%;
+        padding: 6px 10px;
+    }
+
+    .right-text p{
+        font-size: .9rem;
+    }
+    /* ========== Management END ========== */
+
+
+ 
 }
 
 
