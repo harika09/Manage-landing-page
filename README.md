@@ -2,6 +2,18 @@
 
 Link: https://manage-landing-pages.netlify.app/
 
+# Frontend Mentor - Manage landing page
+
+![Design preview for the Manage landing page coding challenge](./assets/img/desktop-preview.jpg)
+
+## Welcome! 👋
+
+Thanks for checking out this front-end coding challenge.
+
+[Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
+
+**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+
 ## The challenge
 
 Your challenge is to build out this landing page and get it looking as close to the design as possible.
@@ -14,8 +26,8 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 - See all testimonials in a horizontal slider
 - Receive an error message when the newsletter sign up `form` is submitted if:
-- The `input` field is empty
-- The email address is not formatted correctly
+  - The `input` field is empty
+  - The email address is not formatted correctly
 
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
