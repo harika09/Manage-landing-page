@@ -26,11 +26,12 @@
 html{
     scroll-behavior: smooth;
 }
-/* body{
-    background-image: url(/assets/img/bg-tablet-pattern.svg), url(/assets/img/bg-tablet-pattern.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: 150% -10%, -120% 70%;
-} */
+body{
+    background-image: url(/assets//img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: -100% 65%;
+    background-size: 65%;
+}
 
 li{
     margin-left: 30px;
@@ -122,6 +123,13 @@ header.sticky li :hover{
 /* ========== Header Navigation END ========== */
 
 /* ========== Banner ========== */
+
+.banner-container{
+    background: url(/assets/img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: 135% -10%;
+    background-size: 65%;
+}
 .banner-content{
     min-height: 100vh;
     display: grid;
@@ -414,6 +422,12 @@ header.sticky li :hover{
 /* ========== Media Query ========== */
 @media screen and (max-width: 900px){
 
+    body{
+        background-image: url(/assets//img/bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+        background-position: 180% 15%;
+        background-size: 65%;
+    }
     /* ========== Header Navigation ========== */
     header{
         padding: 20px 10px;
@@ -465,6 +479,13 @@ header.sticky li :hover{
     /* ========== Header Navigation END ========== */
 
     /* ========== Banner ========== */
+
+    .banner-container{
+        background: url(/assets/img/bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+        background-position: 120% -5%;
+        background-size: 65%;
+    }
     .banner-content{
         grid-template-columns: 1fr;
     }
