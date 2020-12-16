@@ -220,16 +220,7 @@ header.sticky li :hover{
   
 }
 
-/* Swiper Js */
-.swiper-container {
-    width: 100%;
-    height: auto;
-}
 
-.swiper-pagination{  
-    display: none;
-}
-/* Swiper Js */
   
 
 .testimonials-content h1{
@@ -288,14 +279,20 @@ header.sticky li :hover{
 .testimonials-content span{
     margin-top: 80px;
 }
-.swiper-slide{
+
+
+/* Swiper Js */
+.swiper-container {
     width: 100%;
+    height: auto;
 }
 
 .swiper-pagination{  
-    display: inline-block;
+    display: none;
     margin-bottom: 80px;
 }
+
+/* Swiper Js  */
 /* ========== Testimonials END ========== */
 
 
@@ -571,7 +568,14 @@ header.sticky li :hover{
     .testimonials-content .testimonials-feedback{
      grid-template-columns:1fr;
     }
-     /* ========== Testimonials END ========== */
+
+
+    .swiper-pagination{  
+        display: inline-block;
+    }
+
+
+    /* ========== Testimonials END ========== */
     
     /* ========== Simplify ========== */
     .simplify-content{
