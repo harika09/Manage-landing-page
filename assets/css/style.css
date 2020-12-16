@@ -27,10 +27,10 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(/assets//img/bg-tablet-pattern.svg);
-    background-repeat: no-repeat;
-    background-position: -100% 65%;
-    background-size: 65%;
+    background-image: url(/assets/img/bg-tablet-pattern.svg), url(/assets/img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: -30% 65%, 105% -5%;
+    background-size: 40%, 45%;
 }
 
 li{
@@ -124,12 +124,12 @@ header.sticky li :hover{
 
 /* ========== Banner ========== */
 
-.banner-container{
-    background: url(/assets/img/bg-tablet-pattern.svg);
+/* .banner-container{
+    /* background: url(/assets/img/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
-    background-position: 145% -50%;
-    background-size: 65%;
-}
+    background-position: 125% -190%;
+    background-size: 55%; 
+} */
 .banner-content{
     min-height: 100vh;
     display: grid;
@@ -217,11 +217,9 @@ header.sticky li :hover{
 .testimonials-content{
     margin-top: 60px;
     text-align: center;
-  
+    position: relative;
 }
 
-
-  
 
 .testimonials-content h1{
     font-size: 2rem;
@@ -231,8 +229,6 @@ header.sticky li :hover{
 
 .testimonials-content .testimonials-feedback{
    display: flex;
-   grid-gap: 20px;
-   grid-template-columns: repeat(3, 1fr);
    justify-content: space-between;
    align-self: center;
    animation: 20s slider infinite;
@@ -244,6 +240,7 @@ header.sticky li :hover{
     background-color: #FAFAFA;
     border-radius: 10px;
     position: relative;
+    z-index: 100;
    
 }
 
@@ -301,14 +298,17 @@ header.sticky li :hover{
     background-color: var(--Bright-Red);
     color: #fff;
     margin-top: 80px;
+    background-image: url(/assets/img/bg-simplify-section-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
 }
 
 .simplify-content{
-    background: url(/assets/img/bg-simplify-section-desktop.svg) no-repeat center;
-    background-size: cover;
+   
     display: flex;
     justify-content: space-around;
-    padding: 40px 0;   
+    padding: 80px 0;   
 }
 
 .simplify-content h1{
@@ -324,7 +324,7 @@ header.sticky li :hover{
 
 /* ========== Footer ========== */
 .footer-container{
-    background-color: var(--Dark-Blue);
+    background-color: #1E1F26;
     padding: 40px 0;
 }
 
@@ -420,10 +420,10 @@ header.sticky li :hover{
 @media screen and (max-width: 900px){
 
     body{
-        background-image: url(/assets//img/bg-tablet-pattern.svg);
-        background-repeat: no-repeat;
-        background-position: 180% 25%;
-        background-size: 65%;
+        background-image: url(/assets//img/bg-tablet-pattern.svg), url(/assets/img/bg-tablet-pattern.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 420% 23%, 180% -2%;
+        background-size: 85%;
     }
     /* ========== Header Navigation ========== */
     header{
@@ -477,12 +477,12 @@ header.sticky li :hover{
 
     /* ========== Banner ========== */
 
-    .banner-container{
+    /* .banner-container{
         background: url(/assets/img/bg-tablet-pattern.svg);
         background-repeat: no-repeat;
         background-position: 120% -5%;
         background-size: 65%;
-    }
+    } */
     .banner-content{
         grid-template-columns: 1fr;
     }
@@ -697,14 +697,24 @@ header.sticky li :hover{
     }
     /* ========== Management END ========== */
 
+
     /* ========== Testimonials ========== */
     .testimonials-content h1{
         font-size: 1.5rem;
     }
     /* ========== Testimonials END ========== */
 
-    /* ========== Simplify ========== */
 
+    /* ========== Simplify ========== */
+    .simplify-container{
+        background-color: var(--Bright-Red);
+        color: #fff;
+        margin-top: 80px;
+        background-image: url(/assets/img/bg-simplify-section-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 15% 100%;
+    }
   
     .simplify-content h1{
         font-size: 1.8rem;
