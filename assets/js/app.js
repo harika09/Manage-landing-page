@@ -84,7 +84,7 @@ function successMessage(){
         position: 'center',
         icon: 'success',
         title: 'Subscription Confirm!',
-        text: 'Thank you for getting in touch!',
+        text: 'Thank you for subscribing!',
         showConfirmButton: true,
       })
       document.getElementById("email").value = " ";
