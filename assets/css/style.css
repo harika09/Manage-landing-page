@@ -127,7 +127,7 @@ header.sticky li :hover{
 .banner-container{
     background: url(/assets/img/bg-tablet-pattern.svg);
     background-repeat: no-repeat;
-    background-position: 135% -10%;
+    background-position: 145% -50%;
     background-size: 65%;
 }
 .banner-content{
@@ -425,7 +425,7 @@ header.sticky li :hover{
     body{
         background-image: url(/assets//img/bg-tablet-pattern.svg);
         background-repeat: no-repeat;
-        background-position: 180% 15%;
+        background-position: 180% 25%;
         background-size: 65%;
     }
     /* ========== Header Navigation ========== */
