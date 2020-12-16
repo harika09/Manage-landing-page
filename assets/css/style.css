@@ -26,11 +26,11 @@
 html{
     scroll-behavior: smooth;
 }
-body{
+/* body{
     background-image: url(/assets/img/bg-tablet-pattern.svg), url(/assets/img/bg-tablet-pattern.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: 150% -10%, -120% 70%;
-}
+} */
 
 li{
     margin-left: 30px;
@@ -413,11 +413,7 @@ header.sticky li :hover{
 
 /* ========== Media Query ========== */
 @media screen and (max-width: 900px){
-    body{
-        background-image: url(/assets/img/bg-tablet-pattern.svg), none;
-        background-repeat: no-repeat;
-        background-position: 150% -10%;
-    }
+
     /* ========== Header Navigation ========== */
     header{
         padding: 20px 10px;
